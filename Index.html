@@ -4,111 +4,109 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--CSS-->
-        <link rel="stylesheet" href="assets/css/style.scss">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-        <!--BOX ICONS-->
+        <!-- ===== BOX ICONS ===== -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Flora Guo</title>
     </head>
+
     <body>
-        <!--HEADER-->
+        <!-- ===== HEADER ===== -->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo"></a>
+                    <a href="#" class="nav__logo">
+                        <img alt="Flora Guo Logo" src="assets/img/f_logo.png">
+                    </a>
+                </div>
+                    
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
-                    <ul class= "nav__list">
-                        <li class= "nav__item"><a href= "#" class= "nav__link active">Home</a> </li>
-                        <li class= "nav__item"><a href= "#" class= "nav__link">About</a> </li>
-                        <li class= "nav__item"><a href= "#" class= "nav__link">Projects</a> </li>
-                        <li class= "nav__item"><a href= "#" class= "nav__link">Life</a> </li>
-                        <li class= "nav__item"><a href= "#" class= "nav__link">Contact</a> </li>
-                    </ul>
-                </div>
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
 
-                <div class= "nav__toggle" id= "nav-toggle">
-                    <i class='bx bx-menu'></i>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link"></a>about</li>
+                        <li class="nav__item"><a href="#about" class="nav__link"></a>projects</li>
+                        <li class="nav__item"><a href="#resume" class="nav__link"></a>resume</li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
         <main class="l-main">
-            <!--== HOME ==-->
-            <section class="home bc-grid" id= "home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi! <br> I'm <span class= "home__title-color">Flora</span><br>Biomedical Engineering Student</h1>
-                    <a href="#" class="button">Resume</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="#" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#" class="home__social-icon"><i class='bx bxl-github' ></i></i></a>
-                    <a href="#" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                </div>
-
+            <!-- ===== HOME ===== -->
+            <section class="home" id="home">
                 <div class="home__img">
-                    <img src="assets/img/profile.png" alt="">
+                    <img src="assets/img/home__flora_guo.png" alt="Flora Guo 3-D text">
+                </div>
+                <div class="home__container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Biomedical <br>Engineering<br>Student</h1>
+                        <p class="home__description">seeking summer 2020 co-op<br>in design & development.</p>
+                    </div>
                 </div>
             </section>
 
-            <!--== ABOUT ==-->
+            <!-- ===== ABOUT ===== -->
             <section class="about section" id="about">
-                <h2 class="section-title">About</h2> 
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                        <img src="assets/img/about_icon.png" alt="Picture of Flora">
                     </div>
 
                     <div>
-                        <h2 class="about__subtitle">I'm Flora</h2>
-                        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla at aperiam provident obcaecati, illo voluptas voluptate corrupti. Quos ipsum doloremque voluptatem veritatis tempore a reprehenderit, obcaecati exercitationem excepturi eius et?</p>
+                        <h1 class="about__subtitle">Hello!</h1>
+                        <p class="about__text1">
+                            I’m Flora, health-tech and design enthusiast.<br>
+                            I strive to innovate accessible, delightful<br>
+                            products to grow mindfulness and wellbeing.</p>
+                        <p class="about__text2">
+                            Based in Vancouver, BC, I’m currently<br>
+                            pursuing Honours Biomedical Engineering<br>
+                            @ the University of Waterloo.</p>
+                        <h3 class="about__resume">
+                            get my resume</h3>                    
                     </div>
-
                 </div>
-
             </section>
 
-            <!--== PROJECTS ==-->
+            <!-- ===== PROJECTS ===== -->
             <section class="projects section" id="projects">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">projects</h2>
 
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/project1.jpg" alt="">
+                <div class="projects__container bd-grid">
+                    <div class="projects__img">
+                        <img src="assets/img/sentimo.png" alt="">
                     </div>
-                    <div class="work__img">
-                        <img src="assets/img/project1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/project1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/project1.jpg" alt="">
                 </div>
+            </section>
+            <!-- ===== LIFE ===== -->
 
 
-            <!--== LIFE ==-->
+            <!-- ===== CONTACT ====== -->
 
 
-            <!--== CONTACT ==-->
-
-
-            <!--== HOME ==-->
+            <!-- ===== HOME ===== -->
 
         </main>
 
-        <!--FOOTER-->
+        <!-- ===== FOOTER ===== -->
 
-        <!--SCROLL REVEAL-->
+        <!-- ===== SCROLL REVEAL ===== -->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
-        <!--MAIN JS-->
-        <script scr = "assets/js/main.js"></script>
+        <!-- ===== MAIN JS ===== -->
+        <script src="assets/js/main.js"></script>
 
     </body>
-    </html>
+</html>
