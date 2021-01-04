@@ -12,6 +12,7 @@
 :root{
     --bkg-color: #CED6CC;
     --text-color: #323531;
+    --primary-color-dark: #39633E;
     --color1-text: #D1798170;
     --color1-dropshadow: #FFA1AC;
     --color2-text: #35723095;
@@ -117,17 +118,51 @@ a:link{
 }
 
 a:hover {
-    color: var(--color2-text);
+    color: var(--primary-color-dark);
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
-    color: var(--color2-dropshadow);
+    text-shadow: 4px 4px 10px var(--color2-dropshadow);
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
+.sliding-underline {
+  position: relative;
+  display: inline-block;
+  font-size: (var(--h3-size));
+  font-weight: 400;
+  text-align: center;
+}
+
+.sliding-underline,
+.sliding-underline:hover,
+.sliding-underline:focus,
+.sliding-underline.:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sliding-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.sliding-underline::after {
+    top: 100%;
+    height: 2px;
+    width: 0%;
+    left: 0%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s ease all .3s;
+  }
+
+  .nav__item:hover .sliding-underline::after {
+    width: 100%;
+    transition: 0.3s;
+  }
 
 /*===== LAYOUT =====*/
 .bd-grid{
@@ -278,12 +313,26 @@ cursor: pointer;
     top: 2rem;
 } 
 
+.about__resume:link{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.about__resume:hover {
+    color: var(--color2-text);
+    background-color: transparent;
+}
+
+.about__resume:active {
+    color: var(--color2-dropshadow);
+    background-color: transparent;
+}
+
 .about__img{
     position: relative;
     top: 5%;
     justify-content: center;
 	max-width: 100%;
-
 }
 /*==== SKILLS ====*/
 
