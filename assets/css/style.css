@@ -117,19 +117,19 @@ a:link{
     text-decoration: none;
 }
 
-a:hover {
+a:hover{
     color: var(--primary-color-dark);
     background-color: transparent;
     text-decoration: none;
 }
 
-a:active {
+a:active{
     text-shadow: 4px 4px 10px var(--color2-dropshadow);
     background-color: transparent;
     text-decoration: none;
 }
 
-.sliding-underline {
+.sliding-underline{
   position: relative;
   display: inline-block;
   font-size: (var(--h3-size));
@@ -137,20 +137,12 @@ a:active {
   text-align: center;
 }
 
-.sliding-underline,
-.sliding-underline:hover,
-.sliding-underline:focus,
-.sliding-underline.:active {
-  color: #fff;
-  text-decoration: none;
-}
-
-.sliding-underline::after {
+.sliding-underline::after{
   content: "";
   position: absolute;
 }
 
-.sliding-underline::after {
+.sliding-underline::after{
     top: 100%;
     height: 2px;
     width: 0%;
@@ -159,14 +151,20 @@ a:active {
     transition: 0.5s ease all .3s;
   }
 
-  .nav__item:hover .sliding-underline::after {
+.nav__item:hover .sliding-underline::after{
     width: 100%;
     transition: 0.3s;
   }
 
+/* Solid border */
+hr.solid{
+    position: relative;
+    border-top: 3px solid #323531;
+  }
+
 /*===== LAYOUT =====*/
 .bd-grid{
-    max-width: 1024px;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
@@ -243,7 +241,8 @@ cursor: pointer;
 }
 
 .nav__logo{
-	position: absolute;
+    position: absolute;
+    width: 70px;
 }
 
 /*=== Show menu ===*/
@@ -290,6 +289,7 @@ cursor: pointer;
 .about{
     background-color: var(--bkg-color);
     overflow: hidden;
+    height: 1000px;
 }
 
 .about__data{
@@ -300,46 +300,53 @@ cursor: pointer;
 }  
 .about__text1{
     position: relative;
-    top: 1rem;
+    top: 2rem;
 } 
 
 .about__text2{
     position: relative;
-    top: 2.5rem;
+    top: 4rem;
 } 
 
 .about__resume{
     position: relative;
-    top: 2rem;
-} 
-
-.about__resume:link{
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.about__resume:hover {
-    color: var(--color2-text);
-    background-color: transparent;
-}
-
-.about__resume:active {
-    color: var(--color2-dropshadow);
-    background-color: transparent;
+    top: 6.5rem;
+    width: 345px;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px #3B562A75;
+    background-color: #AFC3A4;
+    color: white;
+    font-family: var(--title-font);
+    padding: .5em 5rem;
+    cursor: pointer;
 }
 
 .about__img{
     position: relative;
-    top: 5%;
-    justify-content: center;
-	max-width: 100%;
+    top: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 90%;
 }
-/*==== SKILLS ====*/
+/*==== PROJECTS ====*/
+.projects__container{
+    top: -50%;
+}
+.projects__header{
+    font-size: 2rem;
+}
+.projects__sentimo_mockup{
+    position: relative;
+    width: 100%;
+    left: -35%;
+    top: -74%;
+}
 
-
-/*==== WORK ====*/
-
-
+.projects__sentimo{
+    position: relative;
+    width: 100%;
+}
 /*==== CONTACT ====*/
 
 /* ===== MEDIA QUERIES =====*/
@@ -375,7 +382,7 @@ cursor: pointer;
     .home__data{
         position: absolute;
         top: 60px;
-        right: 53px;
+        left: 66%;
     }
 
     .home__title{
@@ -385,45 +392,64 @@ cursor: pointer;
 
     .home__img{
         position: relative;
+        align-items: center;
         top: 150px;
-        width: 900px;
+        width: 800px;
         }
+
+    
+    .about__container{
+    height: 100%;
+    }
 
     .about__data{
         top: 20%;
     }
+
+    .about__resume{
+        padding: 0.5rem 6rem;
+    }
     .about__img{
         position: relative;
-        top: -70%;
-        left: 50%
+        top: -50%;
+        left: 30%;
+        width: 40%;
     }
 }
 
 @media screen and (min-width: 1024px){
-.bd-grid{
-    margin-left: auto;
-    margin-right: auto;
-}
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.home__container{
-    justify-content: initial;
-    column-gap: 4.5rem;
-}
+    .home__container{
+        justify-content: initial;
+        column-gap: 4.5rem;
+    }
 
-.home__img{
-    position: relative;
-    top: 130px;
-    left: -400px;
-    width: 1200px;
-    height: 466px;
-}
+    .home__img{
+        position: relative;
+        top: 20%;
+        bottom: 100px;
+        left: -400px;
+        width:1000px;
+        height: 466px;
+    }
 
-.home__data{
-    position: relative;
-    left: 738px;
-    top: 60px;
+    .home__data{
+        position: relative;
+        left: 610px;
+
+    }
+
+    .about__resume{
+        width: 50%;
+        padding: 0.5rem 9rem;
     }
 }
+
+
 
 /*==== BUTTONS ====*/
 
