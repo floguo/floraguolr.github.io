@@ -40,11 +40,20 @@
 
 @media screen and (min-width: 768px){
     :root{
-        --h1-size: 5rem;
+        --h1-size: 4rem;
         --h2-size: 3.5rem;
         --h3-size: 3rem;
         --p-size: 1.25rem;
     }
+}
+
+/*===== HOVER =====*/
+.grow{
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover{
+    transform: scale(1.1);
 }
 
 /*===== BASE =====*/
@@ -115,6 +124,7 @@ img{
 a:link{
     background-color: transparent;
     text-decoration: none;
+    color: var(--text-color);
 }
 
 a:hover{
@@ -157,14 +167,16 @@ a:active{
   }
 
 /* Solid border */
-hr.solid{
+.hline-bottom{
     position: relative;
-    border-top: 3px solid #323531;
+    padding-bottom: 10px;
+    width: 100%;
+    border-top: 1px solid #323531;
   }
 
 /*===== LAYOUT =====*/
 .bd-grid{
-    max-width: 900px;
+    max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
@@ -252,7 +264,6 @@ cursor: pointer;
 
 /*===== HOME =====*/
 .home{
-    background-color: var(--bkg-color);
     overflow: hidden;
 }
 
@@ -287,7 +298,6 @@ cursor: pointer;
 
 /*==== ABOUT ====*/
 .about{
-    background-color: var(--bkg-color);
     overflow: hidden;
     height: 1000px;
 }
@@ -313,7 +323,7 @@ cursor: pointer;
     top: 6.5rem;
     width: 345px;
     border-radius: 20px;
-    box-shadow: inset 0px 0px 20px #3B562A75;
+    box-shadow: inset 0px 0px 5px #809F7F;
     background-color: #AFC3A4;
     color: white;
     font-family: var(--title-font);
@@ -321,33 +331,86 @@ cursor: pointer;
     cursor: pointer;
 }
 
+.about__resume:hover{
+    box-shadow: 0px 0px 10px var(--color2-dropshadow);
+}
 .about__img{
     position: relative;
     top: 45%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-	max-width: 90%;
+	max-width: 400px;
 }
 /*==== PROJECTS ====*/
-.projects__container{
-    top: -50%;
+.projects__img{
+    position: relative;
+    border-radius: 100px;
 }
+
+.projects__link{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: blue(10px);
+    transition: .3s;
+}
+
+.projects__img:hover .projects__link{
+    bottom: 0;
+}
+
 .projects__header{
     font-size: 2rem;
 }
-.projects__sentimo_mockup{
+
+.projects__sentimo-mockup{
     position: relative;
     width: 100%;
     left: -35%;
-    top: -74%;
+    top: -80%;
 }
 
 .projects__sentimo{
     position: relative;
-    width: 100%;
 }
 /*==== CONTACT ====*/
+.contact__container{
+    height: 900px;
+    overflow: hidden;
+}
+
+.contact__title{
+    position: relative;
+    top: 0;
+}
+
+.contact__description{
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.contact__icons{
+    position: relative;
+    width: 360px;
+    left: -0.25rem;
+    z-index: 100;
+    
+}
+
+.contact__img{
+    position: relative;
+    height: 430px;
+    width: 430px;
+    overflow: hidden;
+    z-index: 0;
+}
 
 /* ===== MEDIA QUERIES =====*/
 @media screen and (min-width: 768px){
@@ -398,8 +461,10 @@ cursor: pointer;
         }
 
     
-    .about__container{
-    height: 100%;
+    .about{
+        height: 10%;
+        margin: 0;
+        padding: 0;
     }
 
     .about__data{
@@ -409,6 +474,7 @@ cursor: pointer;
     .about__resume{
         padding: 0.5rem 6rem;
     }
+
     .about__img{
         position: relative;
         top: -50%;
@@ -433,19 +499,52 @@ cursor: pointer;
         top: 20%;
         bottom: 100px;
         left: -400px;
-        width:1000px;
+        width:1200px;
         height: 466px;
     }
 
     .home__data{
         position: relative;
-        left: 610px;
+        left: 294%;
 
     }
 
     .about__resume{
-        width: 50%;
-        padding: 0.5rem 9rem;
+        width: 45%;
+        padding: 0.75rem 9.5rem;
+    }
+
+    .projects__sentimo{
+        position: relative;
+        width: 100%;
+    }
+
+    .contact{
+        height: 500px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact__data{
+        width: 80%;
+        position: relative;
+        float: right;
+        left: 25%;
+
+    }
+
+    .contact__description{
+        top: 0;
+    }
+
+    .contact__icons{
+        top: 0;
+    }
+
+    .contact__img{
+        position: relative;
+        top: -65%;
     }
 }
 
