@@ -17,7 +17,7 @@
 
     <body>
         <!-- ===== HEADER ===== -->
-        <header class="l-header">
+         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
                     <a href="#" class="nav__logo">FG</a>
@@ -82,8 +82,6 @@
                 <div class="projects__container bd-grid">
                     <p class="projects__header">What I've been working on ↓</p>
                     <br>
-                    <div class="hline-bottom"></div>
-                    <br>
                     <div class="projects__img">
                         <div class="projects__1">
                             <img src="assets/img/sentimo.png" alt="Sentimo app screens">
@@ -121,15 +119,27 @@
                 </div>
                 
             </section>
-        </main>
 
         <!-- ===== FOOTER ===== -->
 
-        <!-- ===== SCROLL REVEAL ===== -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
         <!-- ===== MAIN JS ===== -->
+        <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+              
+        <script>
+         
+            // Changing the defaults
+            window.sr = ScrollReveal({
+                origin: 'top',
+                distance: '80px',
+                duration: 2000,
+                reset: true
+            });
+            
+            // Customizing a reveal set
+            sr.reveal('.about', {});
+            sr.reveal('.projects__header', {});
+    
+        </script>
         <script src="assets/js/main.js"></script>
 
     </body>
