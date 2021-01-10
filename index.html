@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- ===== BOOTSTRAP CSS ===== -->
+
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -20,7 +22,7 @@
          <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">FG</a>
+                    <a href="index.html" class="nav__logo">FG</a>
                 </div>
                     
                 <div class="nav__toggle" id="nav-toggle">
@@ -84,12 +86,23 @@
                     <br>
                     <div class="projects__img">
                         <div class="projects__1">
-                            <img src="assets/img/sentimo.png" alt="Sentimo app screens">
+                            <a href="sentimo.html">
+                                <img src="assets/img/sentimo.png" alt="Sentimo app screens">
+                                <div class="projects__img-overlay">
+                                    <h2 class="overlay-title">sentimo</h2>
+                                    <p class="overlay-text">mobile app</p>
+                                </div>
+                            </a>
+                        </div>                                   
+                    </div>
+                    <div class="projects__img">
+                        <div class="projects__2">
+                            <img src="assets/img/personal_website.png" alt="Mockup of floraguo.ca on a Macbook">
                             <div class="projects__img-overlay">
-                                <h2 class="overlay-title">Sentimo</h2>
-                                <p class="overlay-text">mobile app</p>
+                                <h2 class="overlay-title">Personal Website</h2>
+                                <p class="overlay-text">web development</p>
                             </div>
-                        </div>                       
+                        </div>  
                     </div>
                 </div>
                 
@@ -115,12 +128,15 @@
                             </div>
                         </div>
                     </div> 
-                    <img class="contact__img" src="assets/img/social_media.png" alt="">
+                    <img class="contact__img" src="assets/img/social_media.png" alt="Stack of social media icons">
                 </div>
                 
             </section>
 
         <!-- ===== FOOTER ===== -->
+        <footer class="footer bd-grid">
+            <p class="footer__text">made with ♡ by Flora Guo 2021</p>
+        </footer>
 
         <!-- ===== MAIN JS ===== -->
         <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
@@ -137,7 +153,13 @@
             
             // Customizing a reveal set
             sr.reveal('.about', {});
+
             sr.reveal('.projects__header', {});
+
+            sr.reveal('.contact__email', {origin: 'bottom'});
+            sr.reveal('.contact__linkedin', {origin: 'bottom', delay: 200});
+            sr.reveal('.contact__github', {origin: 'bottom', delay: 400});
+            sr.reveal('.contact__instagram', {origin: 'bottom', delay: 600});
     
         </script>
         <script src="assets/js/main.js"></script>
