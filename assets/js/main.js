@@ -1,3 +1,15 @@
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: false,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(1000)
+  .typeString('Hi, I\'m Flora')
+  .start();
+
 /*== MENU SHOW ==*/
 const navMenu = document.getElementById('nav-menu'),
     toggleMenu = document.getElementById('nav-toggle'),
