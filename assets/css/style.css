@@ -14,14 +14,12 @@
     --text-color: #323531;
     --primary-color: #83A370;
     --nav-color: #ffffff00;
-    --grid: 1fr;
 }
 
 /*==== FONTS AND TYPOGRAPHY ====*/
 :root{
     font-size: 18px;
     font-weight: 400;
-    line-height: 4rem !important;
     --title-font: 'Karla', sans-serif;
     --body-font: 'Inconsolata', monospace;
     --h1-size: 3.5rem;
@@ -111,7 +109,7 @@ h3{
 p{
   font-size: var(--p-size);
   color: var(--text-color);
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 
 .navbar-brand{
@@ -189,19 +187,35 @@ a:active{
     padding-top: 4rem;
     padding-bottom: 6rem;
 }
+
+.home-desc{
+    margin-bottom: 4rem;
+}
 /*==== ABOUT ====*/
 
 /*==== PROJECTS ====*/
 #projects{
     padding-bottom: 6rem;
 }
+
+.project{
+    position: relative;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.sentimo{
+/* ===== UPDATE CASE STUDY =====*/
+    cursor: not-allowed;
+}
+
 .img{
     display: block;
     padding: 0;
     height: auto;
   }
 
-.project .overlay{
+.overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -240,4 +254,8 @@ a:active{
 
 /*==== CONTACT ====*/
 
-/* ===== MEDIA QUERIES =====*/
+/* ===== FOOTER =====*/
+.footer-text{
+    padding: 2rem;
+}
+
