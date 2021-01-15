@@ -1,0 +1,21 @@
+#mode_rerwrite start here
+
+Options +FollowSymLinks -MultiViews -Indexes
+RewriteEngine On
+
+# does not apply to existing directores, meaning that if the folder exists on server then don't change anything and don't run the rule.
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Check for file in directory with .html extension 
+
+RewriteCond %{REQUEST_FILENAME}\.html !-f
+
+#Here we actually show the page that has .html extension
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+#301 from example.com/page.html to example.com/page
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
