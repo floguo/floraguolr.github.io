@@ -261,6 +261,10 @@ a:active{
 
 /* ===== FOOTER =====*/
 .footer-text{
-    padding: 2rem;
+    padding: 1.5rem;
+}
+
+.footer{
+    margin-top: 10rem;
 }
 
