@@ -22,10 +22,10 @@
     font-weight: 400;
     --title-font: 'Karla', sans-serif;
     --body-font: 'Inconsolata', monospace;
-    --h1-size: 3.5rem;
+    --h1-size: 2.9rem;
     --h2-size: 2.5rem;
     --h3-size: 1.75rem;
-    --p-size: 1rem;
+    --p-size: 1.25rem;
     --normal-font-size: 1rem;
     
 }
@@ -38,8 +38,8 @@
 @media screen and (min-width: 768px){
     :root{
         --h1-size: 3.5rem;
-        --h2-size: 2rem;
-        --h3-size: 1.75rem;
+        --h2-size: 3rem;
+        --h3-size: 2.5rem;
         --p-size: 1.25rem;
     }
 }
@@ -99,11 +99,14 @@ h2{
     font-family: var(--title-font);
     font-size: var(--h2-size);
     color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 4rem;
 }
 
 h3{
     font-family: var(--title-font);
     font-size: var(--h3-size);
+    line-height: 4rem;
 }
 
 p{
@@ -143,11 +146,11 @@ a:active{
 }
 
 /* Solid border */
-.hline-bottom{
-    position: relative;
-    padding-bottom: 10px;
-    width: 100%;
-    border-top: 1px solid #323531;
+.hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px #F8C6DA;
   }
 
 /*===== LAYOUT =====*/
@@ -192,7 +195,9 @@ a:active{
     margin-bottom: 4rem;
 }
 /*==== ABOUT ====*/
-
+.about-img{
+    margin-top: 2rem;
+}
 /*==== PROJECTS ====*/
 #projects{
     padding-bottom: 6rem;
