@@ -31,6 +31,10 @@
     width: 40%;
 }
 
+.wireframe{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 .prototype{
     margin-top: 5rem;
 }
