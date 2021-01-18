@@ -36,7 +36,7 @@
                         <a class="navbar-brand" href="index.html">🌿 Flora Guo</a>
                     </div>
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.html">projects</a></li>
+                            <li><a href="index.html">case studies</a></li>
                             <li><a href="about.html">about</a></li>
                             <li><a href="assets/Flora Guo Resume Jan 2021.pdf">resume</a></li>
                         </ul>
@@ -50,8 +50,9 @@
                     <div class="row">
                         <div class="col-med-12 col-sm-12">
                             <h1>PocketPiggy</h1>
-                        <p class="project-type">HACK THE NORTH 2020++</p>
-                        <p class="project-description">Empowering individuals with paraplegia to regain control of their body and health.</p>
+                        <p class="project-type">HACK THE NORTH 2020++: <a class="link" href="https://devpost.com/software/pocketpiggy">DEVPOST</a></p>
+                        
+                        <p class="project-description">Teaching kids about budgeting and financial responsibility in fun, engaging way!</p>
                         </div>    
                     </div>
                 </div>
@@ -59,7 +60,7 @@
 
             <div class="container col-lg-12 my-padding">
                 <div class="row">
-                    <img src="assets/img/rollin_banner_xlg.png" alt="">
+                    <img src="assets/img/pocket_piggy_cover.png" alt="Mockups of the PocketPiggy app screens">
                 </div>
             </div>
             
@@ -67,26 +68,28 @@
             <section class="project-info my-padding">
                 <div class="container">         
                     <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <h2>role</h2>
+                            <p>Product Design<br>
+                                Visual Design<br>
+                                Android Developer</p>
                         </div>
-                        <div class="col-sm-6 col-lg-5">
+                        <div class="col-sm-6 col-lg-4">
                             <h2>timeline</h2>
-                            <p>fall 2020<br><br></p>
+                            <p>Jan 15-17, 2021<br>
+                                (36 hours)<br></p>
                         </div>
-                        <div class="col-sm-6 col-lg-5">
-                            <h2>skills</h2>
-                            <p>user personas<br>
-                                QFDs<br>
-                                storyboarding<br>
-                                engineering analysis<br>
-                                </p>
+                        <div class="col-sm-6 col-lg-3">
+                            <h2>tools</h2>
+                            <p>Figma<br>
+                                Android Studio<br>
+                                (Java, Kotlin)</p>
                         </div>
                         <div class="col-sm-6 col-lg-2">
                             <h2>team</h2>
-                            <p>Chantelle Ng <br>
-                                Jaeyoung Kang <br>
-                                Shreya Pawar <br>
-                                Seerat Parmar <br>
-                                Divesh Bansal
+                            <p>Jaeyoung Kang<br>
+                                Michael Frew<br>
+                                Inha Kim
                             </p>
                         </div>
                     </div>
@@ -98,21 +101,19 @@
                 <div class="container case-study">         
                     <div class="row">
                         <div class="col-sm-4 col-lg-5">
-                            <h1 class="project-subtitle">The Problem</h1>
+                            <h1 class="project-subtitle">The Inspiration</h1>
                         </div>
                         <div class="col-sm-6 col-lg-7">
-                            <p>How often do you weigh yourself? Perhaps you’ve been frequenting the gym or just had a hearty meal. 
-                                Regardless, knowing your weight is crucial to any weight management plan. 
-                                If you’re an able bodied person, it’s probably quick and easy: 
-                                simply hop onto a scale, take your reading, and carry on with your day.<br><br>
-
-                                However, for many people, especially those living with spinal cord injuries (SCIs), this is far from their reality. 
-                                This issue is especially pertinent as 40%-66% of these individuals are overweight or obese [1].  
-                                Their options often range from $1000-$4000 USD [2], are not designed for independent use, 
-                                and are unwieldy in a home setting.<br><br>
-                                
-                                As my team’s term project in our Intro to Biomedical Design course, 
-                                we tackle this problem space through the iterative design process.</p>
+                            <p>“Money doesn’t grow on trees” - parents everywhere
+                                Sure, it’s a cliché saying, but it’s true!
+                                <br><br>
+                                We wanted to teach children (ages 7-12) the value of money. 
+                                By associating their allowance with the completion of chores, we empower kids to 
+                                make the connection between their effort and a reward. 
+                                In addition, parents no longer have to put up with constant pestering 
+                                about new toys or money. Not only does that make eventually achieving that reward 
+                                so much more satisfying, but it really shows that it’s never too early to start saving!
+                                </p>
                             </p>
                         </div>
                     </div>
@@ -121,18 +122,103 @@
                 <div class="container case-study">
                     <div class="row align-top">
                         <div class="col-sm-4 col-lg-5">
-                            <h1 class="project-subtitle">Our Goal</h1>
+                            <h1 class="project-subtitle">Personas</h1>
                         </div>
                         <div class="col-sm-6 col-lg-7">
                             <p>
-                                <b>Situation Impact Statement:</b>
+                                <b>Primary user:</b>
                                 <br>
-                                To design a product for individuals living with paraplegia to measure their weight 
-                                independently and inexpensively at home to maintain a healthy weight and monitor weight loss.
+                                Ava Chang (she/her) is a nine year old who wants to buy an new lego set, 
+                                but can't convince parents as they recently bought her one. 
+                                Although she receives an allowance upon completion of her weekly chores, she often 
+                                spends her income on small toys or junk food. They give an ultimatum: 
+                                either start saving up her allowance, or no new lego set. 
+                                Her parents suggest budgeting her money, but she has no idea where to start. 
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <img src="assets/img/pocket_piggy_primary_persona.png" 
+                                alt="Image of a smiling young girl with pigtails" class="ava">
+                            </div>
+                            <p>
+                                <b>Secondary user:</b>
+                                <br>
+                                Thomas Chang (he/him) is Ava’s thirty-nine year old father. 
+                                He’s tired of Ava constantly asking him for new toys and gizmos 
+                                and wants her to learn the value of money. Thomas doesn’t want to spend 
+                                too much time setting up a system for Ava. His ideal product would have an 
+                                easy-to-use UI, teach Ava how to budget, and be enjoyable for her so she continues to use it.
+                                <br><br>
+                                To build a product that Ava would enjoy using, 
+                                we needed to create a playful and intuitive UI. 
+                                It should be fun to use for younger children, but capable enough for pre-teens.
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <div class="container case-study">         
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-5">
+                            <h1 class="project-subtitle">Solution Approach</h1>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <p>To create a product that would satisfy both the primary and secondary personas, we created the following requirements for our minimum viable product. 
+                                The product should:
+                                <ol>
+                                    <li>Enable parents to choose what chores to complete and at what frequency</li>
+                                    <li>Have a feature that allows the parent to select allowance amount and frequency</li>
+                                    <li>Have a feauture that allows the child set goals to save towards</li>
+                                </ol>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container case-study">         
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-5">
+                            <h1 class="project-subtitle">Wireframe</h1>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <p>To begin visualizing what our product should look like, 
+                                I created a hand-sketched wireframe with our critical feautures.
+                            </p><br>
+                        </div>
+                        <img src="assets/img/pocket_piggy_wireframe.png" 
+                        alt="Black and white sketch of the PocketPiggy screens">
+                    </div>
+                </div>
+
+                <div class="container case-study">         
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-5">
+                            <h1 class="project-subtitle">Prototype</h1>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <p>Once I had a rough idea of the app layout, I took to Figma to create a prototype.
+                                <br><br>
+                                But first, I wanted to created a friendly character to be the face of our app! I should that have one character motif would emphasize our fun and light-hearted take on finances. On that note, what better animal to represent our goal than a little 
+                                piggy (bank)? 
+                                <br><br>
+                            </p><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-5">
+                            <img src="assets/img/pocket_piggy_logo_sketch.png" 
+                            alt="Black and white sketches of PocketPiggy logos">
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <img src="assets/img/pocket_piggy_logo_designs.png" 
+                            alt="Vector illustrations of the PocketPiggy logos">
+                        </div>
+                     </div>
+
+                     <div class="row prototype">
+                         <img src="assets/img/pocket_piggy_prototype.png" alt="">
+                     </div>
+
             </section>
 
         <!-- ===== FOOTER ===== -->
