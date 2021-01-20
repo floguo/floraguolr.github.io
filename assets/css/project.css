@@ -21,21 +21,47 @@
     font-weight: 700;
 }
 
-.ava{
-    
+.ava{  
     display: block;
     margin-top: 3rem;
-    margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
 }
 
 .wireframe{
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
 }
+
 .prototype{
-    margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+figure {
+    display: table;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.image {
+    margin-top: 1rem;
+}
+
+.bottom-caption {
+    caption-side: bottom;
+    margin-bottom: 3rem;
+}
+
+.less-top-padding {
+    margin-top: -2rem;
+    padding-top: 0;
 }
